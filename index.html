@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aptheatre interaction</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="slides">
+            <div class="paranoia_slide slide centered_grid">
+                <img id="start-button" class="paranoia paranoia_main" src="./assets/paranoia_text_red.svg" alt="">
+                <img onclick="changeSlideBtn()" class="arrow first_arrow" src="./assets/move_slide_1.svg" alt="">
+                <footer>
+                    <p>Гершон Николь</p>
+                    <p>Б23ДЗ10</p>
+                </footer>
+            </div>
+
+            <div class="draw_slide slide centered_grid"  style="display: none;">
+                <img class="paranoia paranoia_draw" src="./assets/paranoia_text_black.svg" alt="">
+                <img onclick="changeSlideBtn()" class="arrow second_arrow" src="./assets/move_slide_2.svg" alt="">
+                <canvas class="draw_canvas" id="canvas_draw"></canvas>
+            </div>
+
+            <div class="blink_slide slide centered_grid" style="display: none;">
+                <img class="paranoia" src="./assets/paranoia_text_red.svg" alt="">
+                <img class="spider spider_1" src="./assets/spiders/1.svg" alt="">
+                <img onclick="changeSlideBtn()" class="arrow first_arrow" src="./assets/move_slide_1.svg" alt="">
+            </div>
+
+            <div class="drag_slide slide" style="display: none;">
+                <div class="darg_column">
+                    <img class="paranoia paranoia_drag centered_absolute" src="./assets/paranoia_text_red.svg" alt="">
+                </div>
+
+                <img class="figure star_1" src="assets/star.png" alt="">
+                <img class="figure star_2" src="assets/star.png" alt="">
+                <img class="figure star_3" src="assets/star.png" alt="">
+
+                <img class="figure star_4" src="assets/star.png" alt="">
+                <img class="figure star_5" src="assets/star.png" alt="">
+
+                <img class="figure circle circle_1" src="assets/circle.png" alt="">
+                <img class="figure circle circle_2" src="assets/circle.png" alt="">
+                <img class="figure circle circle_3" src="assets/circle.png" alt="">
+                <img onclick="changeSlideBtn()" class="arrow third_arrow" src="./assets/move_slide_1.svg" alt="">
+            </div>
+
+            <div class="move_slide slide" style="display: none;">
+                <div class="move_texts up">
+                    <div class="move_back">
+                        <p class="move_text slow">театр страхов паранойя</p>
+                    </div>
+                    <div class="move_back">
+                        <p class="move_text fast">театр страхов паранойя</p>
+                    </div>
+                    <div class="move_back">
+                        <p class="move_text medium">театр страхов паранойя</p>
+                    </div>
+                </div>
+                <img class="paranoia centered_absolute" src="./assets/paranoia_text_black.svg" alt="">
+                <div class="move_texts down">
+                    <div class="move_back">
+                        <p class="move_text fast">театр страхов паранойя</p>
+                    </div>
+                    <div class="move_back">
+                        <p class="move_text slow">театр страхов паранойя</p>
+                    </div>
+                    <div class="move_back">
+                        <p class="move_text fast">театр страхов паранойя</p>
+                    </div>
+                </div>
+                <div class="">
+                    <img onclick="changeSlideBtn()" class="arrow third_arrow" src="./assets/move_slide_2.svg" alt="">
+                </div>
+                
+            </div>
+
+            <div class="eyes_slide slide" style="display: none;">
+                <div class="centered_absolute eyes">
+                    <img class="centered_absolute eyeballs" src="./assets/eye_balls.svg" alt="">
+                    <img class="centered_absolute pupils" src="./assets/pupils.svg" alt="">
+                </div>
+
+                <img class="centered_grid look_text" src="./assets/text.svg" alt="">
+            </div>
+
+        </div>
+    </div>
+</body>
+<script src="./js/main.js"></script>
+<script src="./js/canvasDraw.js"></script>
+</html>

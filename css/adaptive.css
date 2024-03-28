@@ -1,0 +1,30 @@
+@media all and (max-width: 700px) {
+    .paranoia {
+        width: 64vw;
+        height: 32vw;
+    }
+
+    .eyeballs {
+        width: 72vw;
+    }
+
+    .pupils {
+        width: 50vw;
+    }
+
+    .look_text {
+        width: 56vw;
+    }
+
+    .spider_1 {
+        width: 30vw;
+    }
+
+    .figure {
+        width: 6.5vw;
+    }
+
+    .circle {
+        width: 3vw;
+    }
+}

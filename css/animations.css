@@ -1,0 +1,41 @@
+@keyframes eyes_blink {
+
+  90% {
+      transform: none;
+      animation-timing-function: ease-in;
+    }
+    93% {
+      transform: translateY(15px) scaleY(0)
+    }
+    100% {
+      animation-timing-function: ease-out;
+    }
+}
+
+@keyframes right {
+  from {
+      transform: translateX(1000%);
+  }
+
+  to {
+      transform: translateX(-1000%);
+  }
+}
+
+@keyframes move
+    {
+      0%   {
+          transform: rotate(0deg) ;
+      }
+      33% {
+          transform: rotate(15deg);
+        }
+
+      66% {
+        transform: rotate(-15deg);
+      }
+
+      100% {
+        transform: rotate(0deg);
+      }
+    }

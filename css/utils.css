@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@700&display=swap');
+
+p {
+    color: white;
+    font-family: 'Geologica', sans-serif;
+}
+
+body {
+    background-color: black;
+    overflow: hidden;
+}
+
+.centered_absolute {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.centered_vertically {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+}
+
+.centered_grid {
+    display: grid;
+    place-content: center;
+    place-items: center;
+}
+
+.arrow {
+    cursor: pointer;
+}
+
+.fast {
+    animation: right 2.5s linear infinite;
+    animation-fill-mode: forwards;
+}
+
+.medium {
+    animation: right 3s linear infinite;
+    animation-fill-mode: forwards;
+}
+
+.slow {
+    animation: right 3.5s linear infinite;
+    animation-fill-mode: forwards;
+}
